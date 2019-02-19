@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical">
+        <android.support.design.card.MaterialCardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="50dp"
+            android:layout_marginTop="32dp"
+            app:strokeColor="@color/colorPrimaryDark"
+            app:strokeWidth="2dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="Hello World!\nI'm in a brand new material card."
+                android:textAlignment="center"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Title" />
+        </android.support.design.card.MaterialCardView>
+
+
+
+
+        <android.support.design.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_margin="10dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="32dp"
+            app:strokeColor="@color/colorPrimaryDark"
+            app:strokeWidth="2dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Login"
+                    android:textColor="@android:color/black"
+                    android:textSize="30dp" />
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/userIDTextInputLayout"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/userIDTextInputEditText"
+                        android:layout_width="match_parent"
+                        android:imeOptions="actionNext"
+                        android:inputType="textCapWords|textNoSuggestions"
+                        android:maxLines="1"
+                        android:textColorHint="@android:color/black"
+                        android:layout_height="wrap_content"
+                        android:hint="User ID" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/passwordTextInputLayout"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/passwordTextInputEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:imeOptions="actionNext"
+                        android:inputType="textCapWords|textNoSuggestions"
+                        android:maxLines="1"
+                        android:textColorHint="@android:color/black"
+                        android:hint="Password" />
+
+                </android.support.design.widget.TextInputLayout>
+
+
+                <android.support.design.button.MaterialButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Login"
+                    app:backgroundTint="@color/colorPrimary"
+                    app:cornerRadius="10dp"
+                    app:icon="@drawable/ic_lock_open_black_24dp"
+                    app:iconTint="#a4c639"
+                    app:rippleColor="@color/colorAccent" />
+
+            </LinearLayout>
+
+
+        </android.support.design.card.MaterialCardView>
+
+
+        <!--<android.support.design.chip.Chip-->
+        <!--android:id="@+id/single_chip"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="center_horizontal"-->
+        <!--android:layout_marginTop="8dp"-->
+        <!--app:chipText="A single chip"-->
+        <!--app:closeIcon="@drawable/ic_close_circle_black_24dp"-->
+        <!--app:closeIconEnabled="true"/>-->
+
+        <!--<android.support.design.chip.ChipGroup-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="center_horizontal"-->
+        <!--android:layout_marginTop="32dp">-->
+        <!--<android.support.design.chip.Chip-->
+        <!--android:layout_width="wrap_content"-->
+        <!--app:chipText="Chip"-->
+        <!--android:layout_height="wrap_content" />-->
+
+
+        <!--<android.support.design.chip.Chip-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--app:chipText="Group"-->
+        <!--app:chipBackgroundColor="@color/colorAccent"-->
+        <!--app:chipIcon="@drawable/ic_android_white_24dp" />-->
+
+        <!--</android.support.design.chip.ChipGroup>-->
+
+
+
+    </LinearLayout>
+
+
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_add_white_24dp"
+        app:fabSize="normal"
+        app:layout_anchor="@id/bottom_app_bar" />
+
+
+    <android.support.design.bottomappbar.BottomAppBar
+        android:id="@+id/bottom_app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        app:backgroundTint="@color/colorPrimary"
+        app:fabAlignmentMode="center">
+
+    </android.support.design.bottomappbar.BottomAppBar>
+
+</android.support.design.widget.CoordinatorLayout>
